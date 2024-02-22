@@ -3,7 +3,7 @@
 
 <h4>Legalny nielegalny sklep z bronią.</h4>
 <ul>
-  Użyte technologie:
+Użyte technologie:
     <lr>
       <li>Django</li>
       <li>SQL</li>
