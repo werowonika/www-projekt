@@ -2,8 +2,9 @@
 <h2>Opis Projektu:</h2>
 
 <h4>Legalny nielegalny sklep z bronią.</h4>
+
+<h5>Użyte technologie:</h5>
 <ul>
-Użyte technologie:
     <lr>
       <li>Django</li>
       <li>SQL</li>
