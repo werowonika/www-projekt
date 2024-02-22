@@ -17,6 +17,7 @@
       <li>C#, C++, C, B, F#, VB</li>
       <li>Youtube</li>
       <li>AI Plechnotex</li>
+        <li>Roblox, Roblox Player, Roblox Studio</li>
   </lr>
 </ul>
   
