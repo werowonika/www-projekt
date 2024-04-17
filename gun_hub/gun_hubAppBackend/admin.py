@@ -14,7 +14,7 @@ class CompanyAdmin(admin.ModelAdmin):
     list_display = ["com"]
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ["name", "cal", "com", "category"]
+    list_display = ["name", "cal", "com", "category","image", "year"]
 
 
 # Register your models here.
