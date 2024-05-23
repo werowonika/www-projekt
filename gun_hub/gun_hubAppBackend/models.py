@@ -42,7 +42,7 @@ class Product(models.Model):
     cal = models.ForeignKey(Cal, on_delete = models.CASCADE, null=True)
     com = models.ForeignKey(Company, on_delete = models.CASCADE, null=True)
     category = models.ForeignKey(Category, on_delete = models.CASCADE, null=True)
-    image = models.ImageField(null = True)
+    image = models.ImageField(null = True, blank = True, upload_to="images/" )
     year = models.IntegerField(null=True)
 
     def __str__(self):

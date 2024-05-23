@@ -1,8 +1,9 @@
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
+from gun_hubAppBackend.models import Product
 # Create your views here.
-def register(request):
+def home_page(request):
    if request.method == 'POST':
        form = UserCreationForm(request.POST)
        if form.is_valid():
@@ -14,4 +15,14 @@ def register(request):
            return redirect('/login')
    else:
        form = UserCreationForm()
-   return render(request,'register.html', {'form': form})
+   return render(request,'signInPage.html', {'form': form})
+
+def mainPageView(request):
+    all_product = Product.objects.all()
+    context = {
+        'products': all_product
+
+    }
+    return render(request, 'mainPage.html', context=context)
+
+

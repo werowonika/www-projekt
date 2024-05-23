@@ -4,6 +4,7 @@
        <h2>Sign up</h2>
        <form method="post">
            {% csrf_token %}
+           {{ from.username }}
            {% for field in form %}
                <div>
                    {{ field.label_tag }}<br>
